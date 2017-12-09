@@ -1,0 +1,172 @@
+* {
+	font-family: 'Kalam', cursive;
+	color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	height: 100vh;
+	overflow: hidden;
+	background: #fec2aa;
+}
+
+img {
+	width: 100%;
+}
+
+.start-btn {
+	position: relative;
+	top: 85%;
+	transform: translateY(-50%);
+}
+
+/*HEADER*/
+
+.yum_header {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	/*margin-bottom: 2em;*/
+	height: 10vh;
+	padding: 0 2em;
+}
+
+.yum_logo {
+	flex: 1;
+	align-self: center;
+}
+
+.yum_title {
+	flex: 10;
+	align-self: center;
+}
+
+.yum_sound {
+	flex: 1;
+	align-self: center;
+	position: relative;
+}
+
+/*FOOTER*/
+
+.yum_footer {
+	/*margin-top: 2em;*/
+	height: 10vh;
+	padding: 0 2em;
+	position: relative;
+}
+
+.yum_footer a {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+
+/*GAMEAREA*/
+
+.yum_sound img {
+	max-width: 48px;
+}
+
+.yum_gamearea {
+	text-align: center;
+	height: 80%;
+	position: relative;
+}
+
+.yum_gamearea figure img {
+	  -webkit-transition: all 0.4s ease;
+     -moz-transition: all 0.4s ease;
+       -o-transition: all 0.4s ease;
+}
+
+.yum_gamearea figure img:hover{
+	width:105%;
+}
+
+.yum_dragzone {
+	padding: 0 2em;
+}
+
+.yum_dropzone {
+	padding: 0 2em;
+}
+
+.yum_list_ingredient {
+	background-color: darkgray;
+	padding: 1em;
+	overflow: scroll;
+	height: 70vh;	
+}
+
+.yum_drop_ingredient {
+	background-color: darkgray;
+	padding: 1em;
+}
+
+.yum_item_ingredient {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.yum_chosen_ingredient {
+	background-color: darkgray;
+	padding: 1em;
+	max-height: 70vh;
+}
+
+.drag_item {
+	position: relative;
+	z-index: 100;
+	
+}
+
+#safezone {
+	position: absolute;
+	width: 40vw;
+	height: 50vh;
+	border: 2px solid black;
+	margin: auto;
+	padding: 2em;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.cooking_dish {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#thief01 {
+	width: 8vw;
+	position: absolute;
+	z-index: 100;
+	bottom: 5%;
+	right: 0%;
+}
+
+#thief02 {
+	width: 8vw;
+	position: absolute;
+	z-index: 100;
+	bottom: 5%;
+	left: 0%;
+}
+
+#thief01 img,
+#thief02 img {
+	width: 100%;
+}
+

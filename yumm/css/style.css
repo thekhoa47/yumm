@@ -1,0 +1,212 @@
+* {
+	font-family: 'Kalam', cursive;
+
+	color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	margin-top: 3vh;
+	margin-bottom: 4vh;
+	height: 93vh;
+	overflow: hidden;
+	background: #ffae8d;
+}
+
+.home_page{
+     width: 100vw;
+	 height: 100vh;
+}
+
+img {
+	width: 90%;
+}
+
+.start-btn {
+	position: relative;
+	top: 85%;
+	transform: translateY(-50%);
+}
+
+/*HEADER*/
+
+.yum_header {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	/*margin-bottom: 2em;*/
+	height: 10vh;
+	padding: 0 2em;
+}
+
+.yum_logo {
+	flex: 1;
+	align-self: center;
+}
+
+.yum_title {
+	flex: 10;
+	align-self: center;
+
+}
+
+.yum_sound {
+	flex: 1;
+	align-self: center;
+	position: relative;
+}
+
+/*FOOTER*/
+
+.yum_footer {
+	margin-top: 1em;
+	height: 10vh;
+	/*padding: 0 2em;*/
+	position: relative;
+}
+
+.yum_footer a {
+	position: relative;
+	top: 10%;
+	transform: translateY(-50%);
+}
+
+
+
+/*GAMEAREA*/
+.yum_logo img{
+	min-width: 48px;
+
+}
+.yum_sound img {
+	max-width: 48px;
+	min-width: 25px;
+}
+
+.yum_gamearea {
+	/*background: red;*/
+	text-align: center;
+	height: 80%;
+	position: relative;
+}
+
+.yum_gamearea figure img {
+	width:90%;
+	  -webkit-transition: all 0.4s ease;
+     -moz-transition: all 0.4s ease;
+       -o-transition: all 0.4s ease;
+}
+
+.yum_gamearea figure img:hover{
+	width:100%;
+
+}
+
+.yum_dragzone {
+	padding: 0 2em;
+}
+
+.yum_dropzone {
+	padding: 0 2em;
+}
+
+.yum_list_ingredient {
+	background-color: #ef7ba5;
+	/*padding: 1em;*/
+	overflow-y: scroll;
+
+	max-height: 60vh;	
+}
+
+.yum_drop_ingredient {
+	background-color: #5da5db;
+	padding: 1em;
+	overflow-y: scroll;
+	max-height: 60vh;
+}
+
+.yum_item_ingredient {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+.yum_chosen_ingredient {
+	background-color: #5da5db;
+	padding: 1em;
+
+	max-height: 62vh;
+}
+
+
+/*.yum_dropzone{
+	max-height: 55vh;
+
+}*/
+
+
+.yum_chosen_ingredient img{
+    max-width: 31%;
+}
+
+.drag_item {
+	position: relative;
+	z-index: 100;
+	
+}
+
+
+
+
+#safezone {
+	position: absolute;
+	width: 40vw;
+	height: 50vh;
+	border: 2px solid black;
+	margin: auto;
+	padding: 2em;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.cooking_dish {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#thief01 {
+	width: 8vw;
+	position: absolute;
+	z-index: 100;
+	bottom: 5%;
+	right: 0%;
+}
+
+#thief02 {
+	width: 8vw;
+	position: absolute;
+	z-index: 100;
+	bottom: 5%;
+	left: 0%;
+}
+
+#thief01 img,
+#thief02 img {
+	width: 100%;
+}
+
+
+
+.congratulation{
+	color:#f25a69;
+}

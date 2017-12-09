@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pick Up Ingredients</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>	
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+</head>
+<body>
+	<div class="yum_header container-fluid">
+		<div class="yum_logo"> <img src="img/logo.png" alt=""> </div>
+		<div class="yum_title"> <h1> Pick up ingredients </h1> </div>
+		<div class="yum_sound">
+			<img src="img/vol_on.png" alt="vol_on">
+		</div>
+	</div>
+
+	<div class="yum_gamearea container-fluid">
+		<div class="row">
+			<div class="yum_dragzone col-xs-6">
+				<div class="row">
+					<h2>Ingredient List</h2>
+				</div>
+				<div class="row yum_list_ingredient">
+					<img src="img/pizza_ing_1.png" class="drag_item yum_item_ingredient col-xs-4" id="pizza_ing_1">
+					<img src="img/pizza_ing_2.png" class="drag_item yum_item_ingredient col-xs-4" id="pizza_ing_2">
+					<img src="img/pizza_ing_3.png" class="drag_item yum_item_ingredient col-xs-4" id="pizza_ing_3">
+					<img src="img/pizza_ing_4.png" class="drag_item yum_item_ingredient col-xs-4" id="pizza_ing_4">
+					<img src="img/pizza_ing_5.png" class="drag_item yum_item_ingredient col-xs-4" id="pizza_ing_5">
+					<img src="img/pizza_ing_6.png" class="drag_item yum_item_ingredient col-xs-4" id="pizza_ing_6">
+				</div>
+			</div>
+			<div class="yum_dropzone col-xs-6">
+				<div class="row">
+					<h2>Required Ingredients</h2>
+				</div>
+				<div class="row yum_drop_ingredient">
+					<img src="img/pizza_ing_1_sil.jpg" alt="" class="pizza_ing_1 drop_item yum_item_ingredient col-xs-4">
+					<img src="img/pizza_ing_2_sil.jpg" alt="" class="pizza_ing_2 drop_item yum_item_ingredient col-xs-4">
+					<img src="img/pizza_ing_3_sil.jpg" alt="" class="pizza_ing_3 drop_item yum_item_ingredient col-xs-4">
+					<img src="img/pizza_ing_4_sil.jpg" alt="" class="pizza_ing_4 drop_item yum_item_ingredient col-xs-4">
+					<img src="img/pizza_ing_5_sil.jpg" alt="" class="pizza_ing_5 drop_item yum_item_ingredient col-xs-4">
+					<img src="img/pizza_ing_6_sil.jpg" alt="" class="pizza_ing_6 drop_item yum_item_ingredient col-xs-4">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="yum_footer container-fluid">
+		<a role="button" href="type_of_recipe.html" class="btn btn-primary btn-lg pull-left" id="back">Back</a>
+		<a role="button" href="prep_ingredient.html" class="btn btn-primary btn-lg pull-right" id="next">Next</a>		
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<script src="js/pick_ing.js"></script>
+
+</body>
+</html>

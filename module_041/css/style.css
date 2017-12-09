@@ -1,0 +1,34 @@
+#draggable1 {
+	width: 150px;
+	height: 150px;
+	padding: 0.5em;
+	background-color: #ce3233;
+}
+
+#draggable2 {
+	width: 150px;
+	height: 150px;
+	padding: 0.5em;
+	background-color: darkgreen;
+}
+
+#draggable3 {
+	width: 150px;
+	height: 150px;
+	padding: 0.5em;
+	background-color: orange;
+}
+
+#droppable1, #droppable2, #droppable3, #droppable4 {
+	width: 200px;
+	height: 200px;
+	padding: 0.5em;
+	float: left;
+}
+
+#resizable1 {
+	width: 200px;
+	height: 200px;
+	padding: 0.5em;
+}
+

@@ -1,0 +1,135 @@
+/*GENERAL*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #222222;
+	font-size: 14pt;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #f3f3f3;
+	font-size: 0.8em;
+	font-weight: 500;
+}
+
+a:hover {
+	color: #000000;
+	transition: color 0.3s;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.wrapper {
+	width: 1024px;
+	border: 1px solid green;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.row:after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.gutters>[class*='col'] {
+	padding: 0.5em;
+}
+
+.row.gutters {
+	padding: 0em 1em;	
+}
+
+/*TOP BAR*/
+
+.topbar {
+	background: #18a9db;
+	position: relative;
+	height: 50px;
+}
+
+.menu {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	transform: translatey(-50%);
+}
+
+.menu a {
+	margin: 0 0.25em;
+}
+
+.social {
+	display: inline-block;
+	position: absolute;
+	right: 2%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.social a {
+	margin: 0 0.25em;
+	display: inline-block;
+	background-color: #111111;
+	padding: 0.3em 0.6em;
+	border-radius: 0.25em;
+}
+
+.social a:hover {
+	background-color: #f3f3f3;
+	transition: all 0.2s;
+}
+
+/*INFO*/
+
+.info {
+	display: flex;
+	background-color: #f3f3f3;
+	align-items: center;
+	height: 260px;
+}
+
+.info div {
+	/*border: 1px white solid;*/
+	flex: 1;
+}
+
+#avatar {
+	flex: 1;
+	border: 3px solid #999999;
+}
+
+#name {
+	flex: 3;
+	padding-left: 1em;
+}
+
+#name h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#name h5 {
+	color: #18a9db;
+	letter-spacing: 0.1em;
+}
+
+#contactinfo {
+	flex:2;
+	font-size: 0.9em;
+	color: #666666;
+}
+
+#contactinfo strong {
+	color: #18a9db;
+}

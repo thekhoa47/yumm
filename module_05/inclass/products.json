@@ -1,0 +1,88 @@
+{
+	"planty":[
+		{
+			"product": "The Lean Green",
+			"price": 10.49,
+			"image": "img/Product_01.jpg",
+			"calories": 160
+		},
+		{
+			"product": "Essential Green",
+			"price": 10.49,
+			"image": "img/Product_02.jpg",
+			"calories": 160
+		},
+		{
+			"product": "Refresh",
+			"price": 10.49,
+			"image": "img/Product_03.jpg",
+			"calories": 220
+		},
+		{
+			"product": "Energy Plus",
+			"price": 10.49,
+			"image": "img/Product_04.jpg",
+			"calories": 200
+		},
+		{
+			"product": "Black Bean Milk",
+			"price": 10.49,
+			"image": "img/Product_05.jpg",
+			"calories": 380
+		},
+		{
+			"product": "Red Bean Milk",
+			"price": 10.49,
+			"image": "img/Product_06.jpg",
+			"calories": 300
+		},
+		{
+			"product": "Mung Bean Milk",
+			"price": 10.49,
+			"image": "img/Product_07.jpg",
+			"calories": 340
+		},
+		{
+			"product": "Classic Almond",
+			"price": 10.49,
+			"image": "img/Product_08.jpg",
+			"calories": 260
+		},
+		{
+			"product": "Mighty Gray",
+			"price": 10.49,
+			"image": "img/Product_09.jpg",
+			"calories": 300
+		},
+		{
+			"product": "Brunette",
+			"price": 10.49,
+			"image": "img/Product_10.jpg",
+			"calories": 340
+		},
+		{
+			"product": "Un-ordinary",
+			"price": 10.49,
+			"image": "img/Product_11.jpg",
+			"calories": 360
+		},
+		{
+			"product": "Day Dreamer 1",
+			"price": 10.49,
+			"image": "img/Product_12.jpg",
+			"calories": 300
+		},
+		{
+			"product": "Day Dreamer 2",
+			"price": 10.49,
+			"image": "img/Product_13.jpg",
+			"calories": 340
+		},
+		{
+			"product": "Day Dreamer 3",
+			"price": 10.49,
+			"image": "img/Product_14.jpg",
+			"calories": 320
+		}
+	]
+}

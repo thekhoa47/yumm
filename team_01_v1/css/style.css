@@ -1,0 +1,68 @@
+.yum_header {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.yum_footer {
+	margin-top: 2em;
+}
+
+.yum_logo {
+	flex: 1;
+	align-self: center;
+}
+
+.yum_title {
+	flex: 10;
+	align-self: center;
+}
+
+.yum_sound {
+	flex: 1;
+	align-self: center;
+}
+
+.yum_sound img {
+	max-width: 48px;
+}
+
+.yum_gamearea {
+	text-align: center;
+}
+
+.yum_dragzone {
+	padding: 0 2em;
+}
+
+.yum_dropzone {
+	padding: 0 2em;
+}
+
+.yum_list_ingredient {
+	background-color: darkgray;
+	padding: 1em;
+	overflow: scroll;
+	height: 720px;	
+}
+
+.yum_drop_ingredient {
+	background-color: darkgray;
+	padding: 1em;
+}
+
+.yum_item_ingredient {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.yum_chosen_ingredient {
+	background-color: darkgray;
+	padding: 1em;
+}
+
+.drag_item {
+	position: relative;
+	z-index: 100;
+}

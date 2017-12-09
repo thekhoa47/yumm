@@ -1,0 +1,185 @@
+body {
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.navbar {
+	border-radius: 0;
+	border: 0;
+	margin-bottom: 0;
+}
+
+.navbar a {
+	color: white;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+
+.navbar a:hover {
+	color: black;
+	transition: color 0.3s;
+}
+
+.navlogo {
+	display: inline-block;
+	padding: 1em 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
+	float:none;
+}
+
+.navbar-brand {
+	height: auto;
+}
+
+.nav-brand>img {
+	height: 100%;
+}
+
+.mynav {
+	text-align: center;
+}
+
+.mynav li {
+	display: inline-block;
+	float: none;
+}
+
+/*.hero {
+	display: block;
+	position: relative;
+	max-width: 100vw;
+	background-image: url("../img/hero.jpg");
+	background-size: cover;
+	background-position: center center;
+	height: 60vh;
+}*/
+
+.nutrition_calculator {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.nutrition_calculator h3 {
+	font-weight: 300;
+}
+
+.nutrition_calculator h1 {
+	font-weight: 900;
+}
+
+.spotlight-item {
+	text-align: center;
+}
+
+.spotlight-item h3 {
+	font-weight: 700;
+}
+
+.spotlight-item h4 {
+	font-weight: 600;
+}
+
+.spotlight-item img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.add-to-cart {
+	background-color: black;
+	color: white;
+	font-weight: 400;
+}
+
+.add-to-cart:hover {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	transition: all 0.3s;
+}
+
+.my-qty {
+	width: 30%;
+	margin-bottom: 0.75em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.thumbnail-image {
+	width: 100%;
+}
+
+
+#remove_btn {
+	background-color: rgba(0,0,0,0.12);
+	padding: 0.25em 0.6em;
+	border-radius: 50%;
+	color: rgba(0,0,0,0.38);
+	font-weight: 900;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+#remove_btn:hover {
+	background-color: #3e444e;
+	color: #ffffff;
+	transition: all 0.3s;
+}
+
+#count_cart {
+	background-color: #999999;
+	padding: 0.3em 0.4em;
+	border-radius: 50%;
+	color: #ffffff;
+	font-weight: 900;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.grand_total_cost {
+	text-align: center;
+	margin-top: 2em;
+}
+
+.grand_total_cost h2 {
+	font-weight: 900;
+}
+
+
+.cart_prod_name h3{
+	font-weight: 800;
+}
+
+.cart_prod_count span {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+@media only screen and (max-width: 992px) {
+	.cart_prod_name,
+	.cart_prod_count,
+	.cart_prod_price,
+	.cart_prod_remove {
+		text-align: center;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+}
+/* FOOTER */
+
+footer {
+	display: block;
+	max-width: 100vw;
+	margin-top:2em;
+	text-align: center;
+	background-color: black;
+}
+
+footer p {
+	color: rgba(255,255,255,0.83);
+	font-size: 1.2em;
+	font-weight: 700;
+	margin: 0;
+	padding:1em;
+}

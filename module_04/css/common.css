@@ -1,0 +1,660 @@
+/* This is a styleguide of almost ALL website that I will or currently design. */
+
+* {
+	box-sizing: border-box; /* We should put this and only this in the Universal selector */
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;/*graseful degradation*/
+	font-size: 100%; /* relate to the font size that user set in the browser setting, or OS setting*/
+	background-color: #ffffff;
+	color: rgba(0,0,0,0.87);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+
+
+/* text row should never be exceed 800px */
+.container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-large {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto; 
+}
+
+.card {
+	background-color: white;
+	border-radius: 0.5em;
+	padding: 10px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.2);
+}
+
+.card p:last-of-type {
+	margin-bottom: 0;
+}
+
+.nav ul,
+.unbullet {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.cta_button {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: rgba(0,0,0,0.87);
+	text-decoration: none;
+	border: 2px #3e444e solid;
+	border-radius: 50px;
+	padding: 0.3em 0.75em;
+	transition: all .3s;
+}
+
+.cta_button:hover {
+	background-color: #3e444e;
+	color: #ffffff;
+	transition: all .3s;
+}
+
+.cta_addtocart {
+	font-size: 0.8em;
+	transform: translateY(30%);
+}
+
+.cta_addtocart img{
+	margin-right: 0.5em;
+}
+
+.cart-proceed-button {
+	margin-bottom: 2em;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.section-title {
+	text-align: left;
+	font-size: 1.25em;
+	padding: 1.5em 1em 0.5em;
+}
+
+/* Navigation */
+
+.nav ul {
+
+}
+/* 	inline ignore HEIGHT and WIDTH, while block accept HEIGHT and WIDTH correctly
+	inline shrink to its contain size while block expand to fill parent's size*/
+.nav a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 1em 0em;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+	color: rgba(255,255,255,0.7);
+	font-weight: 300;
+	font-size: 0.75em;
+	transition: all 0.2s;
+}
+
+.nav a:hover {
+	color: #ffffff;
+	transition: all 0.2s;
+}
+
+/*study flexbox*/
+
+.nav-horizontal ul {
+	display:-webkit- flex;
+	display: flex;
+}
+
+.nav-horizontal li {
+	flex:-webkit- 1;
+	flex: 1;
+}
+
+.nav-horizontal a {
+	text-align: center;
+}
+
+.nav-pills li {
+	display: inline-block;
+}
+
+.nav-pills a {
+	margin: 0 5px;
+	padding: 0.2em 1em;
+	border-radius: 1em;
+}
+
+.nav-breadcrumb li {
+	display:inline-block;
+}
+
+.nav-breadcrumb li:not(:first-child):before {
+	content: '/';
+	margin: 0 0.1em;
+	display: inline-block;
+}
+
+.nav-breadcrumb a {
+	display: inline-block;
+}
+
+.nav-breadcrumb a:hover {
+	background-color: transparent;
+	color: green;
+	text-decoration: underline;
+
+}
+
+.nav-split ul {
+	display:-webkit- flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-split li {
+	flex-basis: 10%;
+	text-align: center;
+}
+
+.nav-split li:nth-child(3) {
+	margin-right: 2em;
+}
+
+.nav-split li:nth-child(4) {
+	margin-left: 2em;
+}
+
+.nav-split a {
+	text-align: center;
+}
+
+a.logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1000;
+	padding: 0;
+	margin: 0;
+}
+
+a.logo:hover {
+	background-color: unset;
+}
+
+
+
+/* Table is a rigid structure, means that it not responsive 
+the biggest element set the size of the row & column*/
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th,
+.table td {
+	padding: 0.5em 0.5em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+tr {
+	border-bottom: 1px solid #e1e1e1;
+}
+
+table-cart {
+	table-layout: fixed;
+}
+
+td.cart-delivery-radio {
+	width: 175px;
+	text-align: left;
+}
+
+td.cart-delivery-cost {
+	width: 148px;
+}
+
+td.cart-delivery-empty {
+	width: 102px;
+}
+
+.table-cart-sum {
+	margin-bottom: 2em;
+}
+
+.cart-sum {
+	font-size: 0.75em;
+}
+
+.cart-sum strong {
+	font-size: 1.25em;
+}
+
+td.cart-sum-section {
+	width: 950px ;
+	text-align: right;
+}
+
+td.cart-sum-value {
+	width: 148px;
+}
+
+td.cart-sum-empty {
+	width: 102px;
+}
+
+/* HERO IMAGES */
+
+.hero,
+.hero-category {
+	display: block;
+	position: relative;
+	max-width: 100vw;
+	height: 70vh;
+	background-image: url("http://placehold.it/1920x700/66BB6A/ffffff");
+	background-size: cover;
+	background-position: center center;
+}
+
+.hero-category {
+	height: 50vh;
+	background-image: url("http://placehold.it/1920x486/FFD54F/ffffff");
+}
+
+.hero-text {
+	display: flex;
+	position: absolute;
+	width: 30%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	right: 0;
+	top: 50%;
+	transform: translate(-10%, -50%);
+}
+
+.hero h2,
+.hero p,
+.hero a {
+	position: relative;
+	margin: 0.2em 0em;
+}
+
+.hero h2 {
+	margin-bottom: 0em;
+	font-size: 1.75em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: rgba(0,0,0,0.87);
+}
+
+.hero p {
+	font-size: 0.75em;
+	font-weight: 100;
+	letter-spacing: 0.5px;
+	color: rgba(0,0,0,0.87);
+}
+
+/* SPOTLIGHT HOVER EFFECT */
+
+.spotlight {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	background: #030c17;
+}
+
+.spotlight img {
+	position: relative;
+	display: block;
+	width: 100%;
+	transition: all 0.2s, 0.2s -webkit-filter linear;
+}
+
+.spotlight figcaption h2{
+	position: relative;
+	display: block;
+	top: 50%;
+	transform: translateY(-50%) scale(1.5);
+	color: #ffffff;
+	opacity: 0;
+	transition: all 0.3s;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.spotlight figcaption,
+.spotlight figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+}
+
+.spotlight figcaption >a {
+	opacity: 0;
+}
+
+.spotlight figcaption::before {
+	position: absolute;
+	top: 1.5em;
+	right: 1.5em;
+	bottom: 1.5em;
+	left: 1.5em;
+	border: 3px solid #ededed;
+	box-shadow: 0 0 0 1.5em rgba(255,255,255,0.2);
+	content: '';
+	opacity: 0;
+	transition: all 0.3s;
+	transform: scale3d(1.4,1.4,1);
+}
+
+.spotlight:hover h2 {
+	opacity: 1;
+	transform: translateY(-50%) scale3d(1,1,1);
+}
+
+.spotlight:hover figcaption::before {
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+
+.spotlight:hover img {
+	opacity: 0.4;
+	transform: scale(1.5);
+	filter: blur(5px);
+}
+
+/*ITEM THUMBNAIL*/
+
+.spotlight-item {
+	position: relative;
+}
+
+.spotlight-item img {
+	
+}
+
+.spotlight-item figcaption {
+	text-align: center;
+	margin-top: 0.4em;
+}
+
+.spotlight-item figcaption h3 {
+	font-weight: 700;
+	font-size: 0.75em;
+}
+
+.spotlight-item figcaption h2 {
+	font-weight: 100;
+	font-size: 1em;
+}
+
+.spotlight-item a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+/* FOOTER */
+
+.footer-sitemap {
+	display: flex;
+	max-width: 100vw;
+	align-content: flex-start;
+	justify-content: center;
+	background-color: #3e444e;
+}
+
+.footer-sitemap .sitemap {
+	margin: 0.75em 2em;
+	float: left;
+	color: #ffffff;
+}
+
+.sitemap li:not(:first-child) {
+	font-size: 0.5em;
+	font-weight: 100;
+	margin: 0.25em auto;
+}
+
+.sitemap li:first-child {
+	font-size: 0.75em;
+	font-weight: 400;
+	margin: 0.25em auto;
+}
+
+.sitemap li a {
+	text-decoration: none;
+	color: rgba(255,255,255,0.7);
+}
+
+.sitemap li a:hover {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.sitemap:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.footer {
+	display: block;
+	max-width: 100vw;
+	text-align: center;
+	background-color: #3e444e;
+}
+
+.footer p {
+	color: rgba(255,255,255,0.7);
+	font-size: 0.5em;
+	margin: 0;
+	padding: 0 0 1em;
+}
+
+/*FORM STYLISH*/
+
+.cta-product-zone {
+	position: relative;
+}
+
+.hero-product-text h1 {
+	font-size: 1.5em;
+	font-weight: 400;
+	margin-bottom: 0.25em;
+}
+
+.hero-product-text h2 {
+	font-size: 1.25em;
+	margin-bottom: 0.25em;
+}
+
+label {
+	font-weight: 300;
+	font-size: 0.8em;
+	color: rgba(0,0,0,0.54);
+}
+
+label:after {
+	content: "";
+	display: block;
+	clear:both;
+}
+
+.dropdown-qty {
+	border: 1px solid #3f3f3f;
+	color: rgba(0,0,0,0.87);
+	margin: 0.2em 0;
+	font-size: .8em;
+	overflow: hidden;
+	padding: 5px 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 5em;
+}
+
+.cta-col {
+	float: left;
+	margin: 0 0.5em;
+	vertical-align: middle;
+}
+
+.product-description {
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.product-description h2,
+.product-alsolike h2 {
+	text-align: center;
+
+}
+
+.product-description p {
+	font-size: 0.75em;
+	font-weight: 300;
+}
+
+.product-alsolike {
+	margin-top: 1em;
+}
+
+ {
+	text-align: center;
+}
+
+/*CART Items*/
+
+.cart-counter {
+	padding: 0.2em 0.4em;
+	background-color: rgba(39, 174, 96,.54);
+}
+
+.cart-counter:hover {
+	background-color: rgba(39, 174, 96,.87);
+}
+
+td.cart-item-img {
+/*	padding-right: 0;
+	padding-left: 0;*/
+	width: 175px;
+}
+
+.cart-item-name {
+	font-weight: 600;
+	color: rgba(0,0,0,0.87);
+	font-size: 1em;
+}
+
+td.cart-item-name {
+	text-align: left;
+}
+
+.cart-item-costperitem {
+	font-size: 0.75em;
+}
+
+.cart-item-qty .dropdown-qty {
+	width: 3em;
+	font-size: .75em;
+}
+
+.cart-item-totalcost,
+td.cart-delivery-cost {
+	font-weight: 600;
+	font-size: 0.75em;
+}
+
+.cart-item-remove span {
+	background-color: rgba(0,0,0,0.12);
+	padding: 0.25em 0.5em;
+	border-radius: 50%;
+	color: rgba(0,0,0,0.38);
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.cart-item-remove span:hover {
+	background-color: #3e444e;
+	color: #ffffff;
+	transition: all 0.3s;
+}
+
+td.cart-delivery-radio input {
+	margin-right: 0.5em;
+	cursor: pointer;
+}
+
+td.cart-delivery-radio label {
+	cursor: pointer;
+}
+
+td.cart-delivery-name {
+	text-align: left;
+	font-size: 0.75em;
+}
+
+/*PROMO SECTION*/
+
+.container-large form {
+	margin-top: 2em;
+	text-align: right;
+	margin-bottom: 2em;
+}
+
+.cart-promo {
+	font-size: 0.75em;
+	padding: 0.25em 0.5em;
+	margin: 0.25em 0.25em 0.5em;
+}
+
+.cart-promo-submit {
+	font-size: 0.75em;
+	padding: 0.25em 0.5em;
+	margin: 0.25em 0 0.5em;
+}
+

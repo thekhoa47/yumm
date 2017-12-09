@@ -1,0 +1,25 @@
+.board {
+	display: flex;
+	width: 600px;
+	height: 600px;
+	position: relative;
+	margin: 2em auto;
+	flex-wrap: wrap;
+}
+
+.square {
+	flex: 1 33%;
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+}
+
+.player {
+	width: 180px;
+	position: relative;
+	z-index: 1;
+}
+
+.tictac {
+	text-align: center;
+}

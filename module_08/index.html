@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Module 08</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<style>
+		#map {
+			height: 600px;
+			width: 1280px;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="Drop Pin" class="btn btn-warning" onClick="dropPin()">
+	<input id="start" value="Paris">
+	<input id="end" value="">
+	<br>
+	<br>
+	<br>
+	<div id="map">
+       map will be shown here
+   	</div>
+        
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIUVoIW5NspMJCrLlLlR6Gk1bYiNwJq-c&callback=initMap" type="text/javascript"></script>
+        <script>
+            var map;
+            var myMarker;
+            var image = "http://iconshow.me/download.php?file=path/media/images/Mixed/small-n-flat-icon/png2/128/-map-marker.png";
+            
+            function initMap() {
+                var paris = new google.maps.LatLng(48.86100157399595,2.335891842842086);
+        
+                var mapOption = {
+                    zoom: 10,
+                    center: paris
+                }
+
+                map = new google.maps.Map(document.getElementById("map"), mapOption);
+            }
+
+            function dropPin() {
+            	//if theres a marker already, remove it from the map
+            	if(myMarker) {
+                    myMarker.setMap(null);
+                }
+            	myMarker = new google.maps.Marker({
+            		position: map.getCenter(),
+            		map: map,
+            		draggable: true,
+            		icon: image,
+            		animation: google.maps.Animation.DROP,
+            	});		
+            	
+            	myMarker.addListener('click', toggleBounce);
+            	
+            	google.maps.event.addListener(myMarker, 'dragend', function(){
+            		copyMarkerPosition();
+            	});
+            }
+
+            function copyMarkerPosition() {
+            	document.getElementById("end").value = myMarker.getPosition().lat() + ',' + myMarker.getPosition().lng();
+            }
+
+            function toggleBounce() {
+				if (myMarker.getAnimation() !== null) {
+    				myMarker.setAnimation(null);
+  				} else {
+    				myMarker.setAnimation(google.maps.Animation.BOUNCE);
+  				}
+}
+        </script>
+        
+		<!-- Because google key callback "initMap", so the key need to be after the function. -->
+       
+</body>
+</html>

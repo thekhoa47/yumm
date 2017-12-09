@@ -1,0 +1,98 @@
+/*GENERAL*/
+
+body {
+	background: #222222;
+	font-size: 14pt;
+	font-family: 'Roboto', sans-serif;
+}
+
+.whitebg {
+	background: #f3f3f3;
+}
+
+a {
+	text-decoration: none;
+	color: #f3f3f3;
+	font-size: 0.8em;
+	font-weight: 500;
+}
+
+a:hover {
+	color: #000000;
+	transition: color 0.3s;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.valign {
+	display: flex;
+	align-items: center;
+}
+
+.gutters>[class*='col'] {
+	padding: 0.5em;
+}
+
+.row.gutters {
+	padding: 1.5em 0.5em;
+	margin-left: 0;
+	margin-right:0;
+}
+
+/*TOP BAR*/
+
+.topbar {
+	background: #18a9db;
+	position: relative;
+	height: 50px;
+}
+
+.menu {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	transform: translatey(-50%);
+}
+
+.menu a {
+	margin: 0 0.25em;
+}
+
+.social {
+	display: inline-block;
+	position: absolute;
+	right: 2%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.social a {
+	margin: 0 0.25em;
+	display: inline-block;
+	background-color: #111111;
+	padding: 0.3em 0.6em;
+	border-radius: 0.25em;
+}
+
+.social a:hover {
+	background-color: #f3f3f3;
+	transition: all 0.2s;
+}
+
+/*FONT*/
+
+#name {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#job {
+	letter-spacing: 0.15em;
+}
+
+#contactinfo {
+	color: #18a9db;
+}

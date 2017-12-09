@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/theme.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+	
+	<title>Cart - Planty Juice</title>
+</head>
+<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+					<a class="navlogo navbar-brand" href="#">
+						<img src="img/logo.png" alt="Planty Juice">
+					</a>
+					<ul class="mynav nav">
+						<li><a href="index.html"> Product </a></li>
+						<li><a href="cart.html">Cart <span id="count_cart">0</span></a></li>
+					</ul>
+			</div>			
+		</nav>
+	<div class="container">
+		<div class="nutrition_calculator">
+			<h3> Total Calories</h3>
+			<h1 id="nutri-cal"></h1>
+		</div>
+	</div>
+	
+	<div class="container" id="show-cart">
+		<h3 id="empty_cart_noti"></h3>
+
+		<!-- <div class='row'>
+			<div class='col-xs-12 col-md-2'>
+				<img src='"+cartArray[i].image+"'>
+			</div>
+			<div class='cart_prod_name col-xs-12 col-md-6'>
+				<h3>"+cartArray[i].name+"</h3>
+			</div>
+			<div class='cart_prod_price col-xs-12 col-md-1'>
+				<h4>"+cartArray[i].price+"</h4>
+			</div>
+			<div class='cart_prod_count col-xs-12 col-md-2'>
+				<button class='remove-one btn btn-dark btn-md'> - </button>
+				<span>"+cartArray[i].count+"</span>
+				<button class='add-one btn btn-dark btn-md'> + </button>
+			</div>
+			<div class='cart_prod_remove col-xs-12 col-md-1'>
+				<h3 id='remove_btn'>X</h3>
+			</div>
+		</div> -->
+	</div>
+	
+	<div class="container">
+		<div class="grand_total_cost">
+			<h2> Total Cost: $<span id="total-cost">0.00</span> </h2>
+		</div>
+	</div>
+	<footer>
+		<p>Copyright © 2017 Kyle Nguyen</p>
+	</footer>
+
+
+<!-- JQuery -->
+<script
+	src="https://code.jquery.com/jquery-1.12.4.min.js"
+	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

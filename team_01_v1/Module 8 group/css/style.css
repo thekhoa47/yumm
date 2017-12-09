@@ -1,0 +1,145 @@
+* {
+	box-sizing:border-box;
+	
+}
+
+body {
+	/*height:100%;*/
+	overflow-x: hidden;
+	margin: 0;
+
+}
+
+
+
+.container{
+	/*width:100vw;*/
+	overflow: hidden;
+	background: #ccc;
+	
+	
+
+}
+
+
+
+.yum-title-container{
+	width:100%;
+	background: #FFC8AE;
+	height:100vh;
+
+}
+
+
+.sound{
+	padding:2%;
+	color:white;
+}
+
+.yum-title-sm{
+	padding:2%;
+	color:white;
+}
+
+.yum-content{
+	padding-top: 10%;
+	text-align: center;
+	color:#fff;
+
+}
+
+.yum-title {
+
+	font-family: 'Fugaz One', cursive;
+	font-size:36pt;
+	color: #8BC7DE;
+
+}
+
+
+.yum-discription{
+	font-size:14pt;
+	word-spacing: 2px;
+
+}
+
+.play-button{
+	width:120px;
+	border-style: solid;
+
+}
+
+
+
+
+.type-content{
+	padding-top: 5%;
+	text-align: center;
+	color:#8BC7DE;
+	font-family: 'Fugaz One', cursive;
+	font-size:24pt;
+
+
+}
+
+
+.type-of-recipe{
+	padding:2%;
+	text-align: center;
+	font-family: 'Fugaz One', cursive;
+}
+
+li{
+	list-style: none;
+}
+
+.recipes.img{
+	max-width:225px;
+	width:225px;
+	max-height:200px;
+	height:200px;
+	overflow:hidden;
+
+	}
+
+
+.next-button{
+	padding:2%;
+	text-align: right;
+}
+
+
+
+.cooking-container{
+    width:100%;
+	background: #FFC8AE;
+	height:800px;
+
+}
+
+.cooking-img{
+
+	text-align: center;
+	padding:2%;
+	font-family: 'Fugaz One', cursive;
+
+}
+
+#oven{
+	width:25%;
+}
+
+.step-button{
+
+	width:100%;
+	padding:2%;
+
+}
+
+
+.finish-button{
+	text-align: center;
+}
+
+
+
