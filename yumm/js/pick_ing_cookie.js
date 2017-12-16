@@ -6,7 +6,8 @@ $(function() {
         containment: ".yum_gamearea",
         revert: "invalid",
         scroll: false,
-        helper: 'clone'
+        helper: 'clone',
+        delay: 500
     });
 
     // $(".drop_item").droppable({
